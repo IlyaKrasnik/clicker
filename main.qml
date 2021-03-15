@@ -21,6 +21,9 @@ ApplicationWindow {
         onPerSecondChanged: {
             gamePage.per_second = "Per second: " + per_second;
         }
+        onTapFactorChanged: {
+            gamePage.tap_factor = "Tap factor: x" + tap_factor;
+        }
     }
 
     StackView {

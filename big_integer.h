@@ -43,11 +43,11 @@ public:
     friend BigInteger operator+(const BigInteger& l_number,const BigInteger& r_number);
     friend BigInteger operator-(const BigInteger& l_number,const BigInteger& r_number);
     friend BigInteger operator*(BigInteger l_number, double r_number);
-    friend BigInteger operator*(BigInteger l_number, size_t r_number);
+    friend BigInteger operator*(BigInteger l_number, int r_number);
     BigInteger& operator+=(const BigInteger& r_number);
     BigInteger& operator-=(const BigInteger& r_number);
     BigInteger& operator*=(double r_number);
-    BigInteger& operator*=(size_t r_number);
+    BigInteger& operator*=(int r_number);
 
     friend bool operator<(const BigInteger& l_number, const BigInteger& r_number);
     friend bool operator>(const BigInteger& l_number, const BigInteger& r_number);

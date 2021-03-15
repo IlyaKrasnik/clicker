@@ -6,7 +6,7 @@ Page {
     property alias balance: balance.text
     property alias per_click: per_click.text
     property alias per_second: per_second.text
-
+    property alias tap_factor: tap_factor.text
     id: gamePage
     background: Rectangle {
         color: "pink"
@@ -93,4 +93,16 @@ Page {
         anchors.margins: 20
     }
 
+    Text {
+        id: tap_factor
+        height: parent.height / 20
+        text: "Tap factor: 1"
+        font {
+            bold: true
+            pixelSize: Math.min(width, height) / 2
+        }
+        anchors.top: per_second.top
+        anchors.horizontalCenter: per_second.horizontalCenter
+        anchors.margins: 20
+    }
 }

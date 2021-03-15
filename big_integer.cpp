@@ -93,7 +93,7 @@ BigInteger operator*(BigInteger l_number, double r_number) {
     return l_number;
 }
 
-BigInteger operator*(BigInteger l_number, size_t r_number) {
+BigInteger operator*(BigInteger l_number, int r_number) {
     size_t r = r_number;
     for (auto& el : l_number.number_)
         el *= r;
@@ -117,7 +117,7 @@ BigInteger& BigInteger::operator*=(double r_number) {
     return *this = *this * r_number;
 }
 
-BigInteger& BigInteger::operator*=(size_t r_number) {
+BigInteger& BigInteger::operator*=(int r_number) {
     return *this = *this * r_number;
 }
 bool operator>(const BigInteger& l_number, const BigInteger& r_number) {
