@@ -96,9 +96,9 @@ Page {
     Text {
         id: tap_factor
         height: parent.height / 20
-        text: "Tap factor: 1"
+        text: "Tap factor: x1"
         font {
-            bold: true
+            italic: true
             pixelSize: Math.min(width, height) / 2
         }
         anchors.top: per_second.top
