@@ -123,7 +123,7 @@ BigInteger& BigInteger::operator*=(size_t r_number) {
 bool operator>(const BigInteger& l_number, const BigInteger& r_number) {
     if (l_number.number_.size() != r_number.number_.size())
         return l_number.number_.size() > r_number.number_.size();
-    for (size_t i = l_number.number_.size() - 1; i >= 0; i--)
+    for (int i = (int)l_number.number_.size() - 1; i >= 0; i--)
         if (l_number.number_[i] != r_number.number_[i])
             return l_number.number_[i] > r_number.number_[i];
     return false;

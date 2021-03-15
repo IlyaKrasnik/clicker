@@ -92,4 +92,5 @@ Page {
         anchors.horizontalCenter: per_click.horizontalCenter
         anchors.margins: 20
     }
+
 }

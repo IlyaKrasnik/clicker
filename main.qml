@@ -14,8 +14,12 @@ ApplicationWindow {
         id: player
         onBalanceChanged: {
             gamePage.balance = "Balance: " + balance;
+        }
+        onPerClickChanged:  {
             gamePage.per_click = "Per click: " + per_click;
-            gamePage,per_second = "Per second: " + per_second;
+        }
+        onPerSecondChanged: {
+            gamePage.per_second = "Per second: " + per_second;
         }
     }
 
